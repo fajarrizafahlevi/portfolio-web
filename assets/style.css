@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  /* outline: 1px solid limegreen; */
+}
+
+body {
+  background-color: var(--background-primary);
+  color: var(--font-primary);
+}
+
+/* variables */
+
+:root {
+  --background-primary: #070707;
+  --background-secondary: #171717;
+  --font-primary: white;
+  --font-secondary: gold;
+}
+
+/* templates */
+
+.container {
+  padding: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  margin: 32px auto;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: var(--background-secondary);
+}
+
+a,
+button {
+  min-width: 44px;
+  max-width: 44px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-primary);
+}
+
+h2,
+h3 {
+  margin: 16px 0;
+}
+
+/* navbar */
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+  background-color: var(--background-primary);
+}
+
+nav ul {
+  padding-left: 0;
+  display: flex;
+}
+
+nav ul li {
+  padding: 16px;
+}
+
+/* content */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* about */
+
+#about {
+  margin: 64px auto;
+  width: 500px;
+}
+
+#about figure img {
+  width: 200px;
+  height: auto;
+  margin-right: 16px;
+}
+
+/* project */
+
+#projects {
+  margin: 64px auto;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  padding: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    text-align: center;
+  }
+
+  #about {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #about figure img {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+
+  nav {
+    justify-content: center;
+  }
+}
