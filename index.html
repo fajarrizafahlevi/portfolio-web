@@ -35,20 +35,29 @@
     />
     <script src="./assets/script.js"></script>
 
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section
+        id="hero"
+        class="flex column middle text-center"
+      >
+        <h1>Hello!</h1>
+        <p>My name is Fajar Riza Fahlevi,<br />an aspiring <strong>Front End Developer</strong></p>
+      </section>
+      <section
         id="about"
-        class="flex center"
+        class="flex middle"
       >
         <figure>
           <img
@@ -59,85 +68,94 @@
         <article class="flex column">
           <h2>About me</h2>
           <p>
-            I am a chemical engineering fresh graduate from University of Lampung. I just learn
-            coding from mid 2022. I am currently learning front-end web development
+            I am a chemical engineering fresh graduate from University of Lampung. I learned coding
+            from mid 2022. I am currently learning <strong>front-end web development</strong>.
           </p>
         </article>
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <section class="flex column">
-          <article>
-            <h3>Personal</h3>
-            <p>These are my personal projects.</p>
-          </article>
-          <div class="grid">
-            <div class="grid-item">
-              <p>
-                <a
-                  href="https://jappardraws-web.vercel.app"
-                  target="_blank"
-                  ><i
-                    class="fa fa-globe"
-                    style="font-size: 32px"
-                  ></i
-                  ><br /><br />Jappar Draws</a
-                >
-              </p>
-            </div>
+      <section
+        id="projects"
+        class="flex column middle text-center"
+      >
+        <article>
+          <h2>Projects</h2>
+          <p>These are my personal projects.</p>
+        </article>
+        <div class="grid">
+          <div class="grid-item flex column">
+            <i
+              class="fa fa-bookmark"
+              style="font-size: 32px"
+            ></i>
+            <h3>
+              <a
+                href="#"
+                target="_blank"
+                >Animarker</a
+              >
+            </h3>
+            <p>Web App</p>
           </div>
-        </section>
-        <section class="flex column">
-          <article>
-            <h3>Dicoding</h3>
-            <p>These are project I build and submit for final project during Dicoding's classes.</p>
-          </article>
-          <div class="grid">
-            <div class="grid-item">
-              <p>
-                <a
-                  href="https://rakbuku-app.vercel.app"
-                  target="_blank"
-                  ><i
-                    class="fa fa-book"
-                    style="font-size: 32px"
-                  ></i
-                  ><br /><br />Rak Buku</a
-                >
-              </p>
-            </div>
-            <div class="grid-item">
-              <p>
-                <a
-                  href="https://catatanku-app.vercel.app"
-                  target="_blank"
-                  ><i
-                    class="fa fa-pencil"
-                    style="font-size: 32px"
-                  ></i
-                  ><br /><br />
-                  Catatanku</a
-                >
-              </p>
-            </div>
-            <div class="grid-item">
-              <p>
-                <a
-                  href="https://foroom-app.vercel.app"
-                  target="_blank"
-                  ><i
-                    class="fa fa-comments"
-                    style="font-size: 32px"
-                  ></i
-                  ><br /><br />Foroom</a
-                >
-              </p>
-            </div>
+          <div class="grid-item flex column">
+            <i
+              class="fa fa-money"
+              style="font-size: 32px"
+            ></i>
+            <h3>
+              <a
+                href="#"
+                target="_blank"
+                >Loanasin</a
+              >
+            </h3>
+            <p>iOS/Android App</p>
           </div>
-        </section>
+          <div class="grid-item flex column">
+            <i
+              class="fa fa-globe"
+              style="font-size: 32px"
+            ></i>
+            <h3>
+              <a
+                href="#"
+                target="_blank"
+                >Jappar Draws</a
+              >
+            </h3>
+            <p>Website</p>
+          </div>
+        </div>
       </section>
     </main>
-    <aside></aside>
-    <footer>Fajar Riza Fahlevi - 2023</footer>
+    <aside>
+      <section
+        id="contact"
+        class="flex column middle"
+      >
+        <h2>Contact</h2>
+        <div>
+          <ul class="flex">
+            <li>
+              <a href="#"><i class="fa fa-envelope"></i>fajarrizafahlevi@gmail.com</a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/fajarrizafahlevi/"
+                target="_blank"
+                ><i class="fa fa-github"></i>Fajar Riza Fahlevi</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/fajarrizafahlevi/"
+                target="_blank"
+                ><i class="fa fa-linkedin"></i>Fajar Riza Fahlevi</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+    <footer class="text-center">&copy; 2023</footer>
   </body>
 </html>
