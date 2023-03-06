@@ -65,8 +65,12 @@ section {
 
 a,
 button {
+  min-height: 44px;
   min-width: 44px;
-  max-width: 44px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 ul {
@@ -94,14 +98,24 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 96px;
   padding: 16px 32px;
   background-color: var(--background-primary);
 }
 
+/* navigation */
+
 nav {
   top: 0;
   display: flex;
+}
+
+#menuButton {
+  display: none;
+}
+
+#closeButton {
+  display: none;
 }
 
 nav ul {
@@ -113,6 +127,7 @@ nav ul li {
 }
 
 nav ul li a {
+  font-size: large;
   padding-bottom: 4px;
   border-bottom: solid 2px var(--background-primary);
   transition: 1.7s;
@@ -125,7 +140,7 @@ nav ul li a:hover {
 /* hero */
 
 #hero h1 {
-  font-size: 96px;
+  font-size: 72px;
 }
 
 /* content */
@@ -197,13 +212,49 @@ footer {
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
   .grid {
     grid-template-columns: auto;
   }
 
-  nav {
-    justify-content: center;
+  #menuButton {
+    display: flex;
+    font-size: 32px;
+    border: none;
+    background-color: transparent;
+    color: var(--font-primary);
+  }
+
+  #closeButton {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    color: var(--font-primary);
+  }
+
+  #menuList {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: -180px;
+    width: 180px;
+    display: flex;
+    align-items: flex-end;
+    padding: 32px;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--background-secondary);
+    transition: 0.7s;
+  }
+
+  #menuList.open {
+    right: 0px;
+  }
+
+  #menuList li a {
+    border-bottom: solid 2px var(--background-secondary);
   }
 
   #contact ul {

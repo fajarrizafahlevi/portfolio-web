@@ -15,7 +15,7 @@ $(document).ready(function () {
         {
           scrollTop: $(hash).offset().top,
         },
-        800,
+        700,
         function () {
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
@@ -24,3 +24,12 @@ $(document).ready(function () {
     } // End if
   });
 });
+
+function openMenu() {
+  $('#menuList').addClass('open');
+  $('body').css('opacity', '0,5');
+}
+
+function closeMenu() {
+  $('#menuList').removeClass('open');
+}
